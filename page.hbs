@@ -1,0 +1,17 @@
+{{!< default}}
+
+{{! The main content area for the page }}
+<main id="content_wspro" role="main" class="col-off2lg8-off1md10-off1sm10">
+
+    <article class="{{post_class}}">
+    {{#post}}
+        <header class="post_header col-lg10-md10-sm12">
+            <h2 class="post_title acc_txt">{{{title}}}</h2>
+        </header>
+        <section class="post_content col-lg10-md10 tooltip-me">
+            {{content}}
+        </section>
+    {{/post}}
+    </article>
+
+</main>

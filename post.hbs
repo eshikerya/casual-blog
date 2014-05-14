@@ -1,0 +1,40 @@
+{{!< default}}
+
+{{! The main content area on the post }}
+<main id="content_wspro" role="main" class="col-off2lg8-off1md10-off1sm10">
+
+    <article class="{{post_class}}">
+    {{#post}}
+        <header class="post_header col-lg10-md10-sm12">
+            <span class="post_meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags prefix="on "}}</span>
+            <h2 class="post_title acc_txt">{{{title}}}</h2>
+        </header>
+        <section class="post_content col-lg10-md10 tooltip-me">
+            {{content}}
+        </section>
+        <footer id="post_footer_wspro">
+            <section id="share_post_wspro">
+                <h4>Share this post</h4>
+                <a class="fa fa-twitter" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"></a>
+                <a class="fa fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"></a>
+                <a class="fa fa-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}"
+                onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"></a>
+            </section>
+
+            <section id="author_wspro">
+                <img src="{{asset "casual.png"}}" alt="Casual.pm">
+                <h4>Casual</h4>
+                <a href="http://casual.pm">http://casual.pm</a>
+                <p>Well crafted Premium Ghost Themes for a clean and professional blogging.</p>
+            </section>
+
+            <section id="comments_wspro">
+                {{> disqus}}
+            </section>
+        </footer>
+    {{/post}}
+    </article>
+
+</main>

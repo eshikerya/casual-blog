@@ -1,0 +1,25 @@
+{{!< default}}
+
+{{! The main content area on the homepage }}
+<main id="content_wspro" role="main" class="col-off2lg8-off1md10-off1sm10">
+
+    {{#foreach posts}}
+
+    <article class="{{post_class}}">
+        <header class="post_header col-lg10-md10-sm12">
+            <span class="post_meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags prefix="on "}}</span>
+            <h2 class="post_title acc_txt"><span class="fa fa-bookmark"></span><a href="{{url}}"
+                class="acc_txt">{{{title}}}</a></h2>
+        </header>
+        <section class="post_preview col-lg10-md10">
+            {{content words="0"}}
+            <p class="post_excerpt">{{excerpt words="70"}}&hellip;</p>
+        </section>
+        <a href="{{url}}" class="read_more_btn acc_bkg">Read More <span class="fa fa-arrow-right"></span></a>
+    </article>
+
+    {{/foreach}}
+
+    {{pagination}}
+
+</main>

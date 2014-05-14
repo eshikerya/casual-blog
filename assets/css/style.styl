@@ -1,0 +1,584 @@
+/* 	Wordsmith Pro - Ghost Theme
+*
+*	GHOSTHIT.COM
+*
+*	v1.0.0
+*	Copyright (c) 2014
+*
+*
+*
+*	Styling Content:
+*
+*	A. INIT THEME SETTINGS (edit your colors here)
+*	B. BODY WRAPPER
+*	C. HEADER
+*	D. MAIN CONTENT (General)
+*	E. PAGINATION
+*	F. SHARE POST, AUTHOR
+*	G. COMMENTS
+*	H. FOOTER
+*	I. GH PLUGINS (Tooltips)
+*	J. MEDIA QUERIES (General)
+*
+* */
+
+acc = #0072bc
+blk = #000
+bkg = #f1f1f1
+lgy = #cccccc
+dgy = #252525
+txt = #505050
+ww = #fff
+
+/*	A.
+*	INIT THEME SETTINGS
+* ================================ */
+
+.acc_bkg
+	background-color acc
+
+.acc_bkg_tr
+	background-color rgba(acc, 0.7)
+
+.acc_txt
+#comments_wspro a
+	color acc
+
+#content_wspro blockquote
+	border-left 5px solid acc
+
+::-moz-selection
+	background rgba(acc, 0.1)
+
+::selection
+	background rgba(acc, 0.1)
+
+/* =============================== */
+body
+	background-color bkg
+	font 18px/34px "Noto Serif", serif
+	text-rendering optimizeLegibility
+
+h1
+h2
+h3
+h4
+h5
+h6
+	font-family "Noto Sans", sans-serif
+
+::-moz-selection
+	color #222
+	text-shadow none
+
+::selection
+	color #222
+	text-shadow none
+
+
+/*	B.
+*	BODY WRAPPER
+* ================================ */
+
+#wrapper_wspro
+	background-color ww
+	-webkit-box-shadow 2px 2px 6px rgba(blk, 0.2)
+	-moz-box-shadow 2px 2px 6px rgba(blk, 0.2)
+	box-shadow 2px 2px 6px rgba(blk, 0.2)
+	position relative
+
+
+/*	C.
+*	HEADER
+* ================================ */
+
+#head_wspro
+	color ww
+	position relative
+	width 100%
+
+#head_content_wspro
+	-webkit-box-sizing border-box
+	-moz-box-sizing border-box
+	box-sizing border-box
+	padding 20px 50px
+	text-align center
+	width 100%
+
+	img
+		height auto
+		margin 10px auto
+		max-width 150px
+
+	a
+		color ww
+		text-decoration none
+
+#blog_title
+	font-weight 400
+	margin 0
+	opacity 0.0
+	padding-right 50px
+
+#menu_wspro
+	font-family "Noto Sans", sans-serif
+	opacity 0.0
+	padding-right 50px
+
+	ul
+		list-decoration none
+		margin 0
+		margin-bottom 42px
+		padding 0
+		width 100%
+
+		li
+			border-bottom 1px solid ww
+			margin 12px 8px
+			padding 0 4px
+			-webkit-transition all 0.2s ease
+			-moz-transition all 0.2s ease
+			-ms-transition all 0.2s ease
+			-o-transition all 0.2s ease
+			transition all 0.2s ease
+			vertical-align top
+
+			&:hover
+				opacity 0.5
+
+		a
+			line-height 22px
+
+#blog_description
+	max-width 700px
+	margin 0 auto 40px auto
+	opacity 0.0
+	padding-right 50px
+
+.post-template #blog_description
+.tag-template #blog_description
+	display none
+
+/*	D.
+*	MAIN CONTENT
+* ================================ */
+
+#content_wspro
+	position relative
+
+	article
+		margin 40px 0
+		padding 40px 0
+		position relative
+		text-align center
+		width 100%
+
+		.post_header
+			font-family "Noto Sans", sans-serif
+			text-align left
+
+			.post_meta
+				color lgy
+				font-size 0.9em
+
+				a
+					color lgy
+					-webkit-transition all 0.3s ease
+					-moz-transition all 0.3s ease
+					-ms-transition all 0.3s ease
+					-o-transition all 0.3s ease
+					transition all 0.3s ease
+
+					&:hover
+						color txt
+
+			.post_title
+				font-size 1.6em
+				line-height 1.2em
+				margin-top 10px
+				margin-bottom 0px
+				position relative
+
+				.fa-bookmark
+					display none
+
+				a
+					text-decoration none
+					-webkit-transition all 0.3s ease
+					-moz-transition all 0.3s ease
+					-ms-transition all 0.3s ease
+					-o-transition all 0.3s ease
+					transition all 0.3s ease
+
+					&:hover
+						color txt
+
+		.post_preview
+		.post_content
+			color txt
+			margin-top 20px
+			text-align left
+			position relative
+
+			img
+				-webkit-border-radius 5px
+				-moz-border-radius 5px
+				border-radius 5px
+				height auto
+
+			.post_excerpt
+				margin-top 0
+
+		.post_content
+
+			a
+				color txt
+				font-weight 700
+
+			pre
+				border 1px solid lgy
+				border-radius 4px
+				-webkit-box-sizing border-box
+				-moz-box-sizing border-box
+				box-sizing border-box
+				font-size 0.9em
+				line-height 1.6em
+				margin 10px 0
+				padding 10px 15px
+				width 100%
+
+			blockquote
+				font-size 1.6em
+				font-style italic
+				line-height 1.4em
+				width 100%
+
+		.read_more_btn
+			-webkit-border-radius 5px
+			-moz-border-radius 5px
+			border-radius 5px
+			color ww
+			display inline-block
+			font-family "Noto Sans", sans-serif
+			font-weight 700
+			line-height 50px
+			margin 30px 0
+			overflow hidden
+			padding 0 40px
+			position relative
+			text-decoration none
+			text-shadow 0 1px 0 rgba(blk, 0.3)
+			-webkit-transition all 0.3s ease
+			-moz-transition all 0.3s ease
+			-ms-transition all 0.3s ease
+			-o-transition all 0.3s ease
+			transition all 0.3s ease
+
+			.fa-arrow-right
+				line-height 50px
+				position absolute
+				right -30px
+				top 0
+				-webkit-transition all 0.3s ease
+				-moz-transition all 0.3s ease
+				-ms-transition all 0.3s ease
+				-o-transition all 0.3s ease
+				transition all 0.3s ease
+				width 30px
+
+			&:hover
+				padding-left 30px
+				padding-right 50px
+
+			&:hover .fa-arrow-right
+				right 18px
+
+	article.featured
+
+		.post_header .fa-bookmark
+			border-radius 5px
+			display inline-block
+
+.home-template #content_wspro article
+.archive-template #content_wspro article
+.tag-template #content_wspro article
+	border-bottom 1px solid lgy
+
+/*	E.
+*	PAGINATION
+* ================================ */
+
+nav.pagination
+	position relative
+	text-align center
+	width 100%
+
+	.page-number
+		color txt
+		font-size 0.8em
+		font-style italic
+
+	.older-posts
+	.newer-posts
+		background-color dgy
+		border 1px solid dgy
+		border-radius 5px
+		color ww
+		font-family "Noto Sans", sans-serif
+		font-size 0.8em
+		padding 2px 12px
+		position absolute
+		text-decoration none
+		-webkit-transition all 0.3s ease
+		-moz-transition all 0.3s ease
+		-ms-transition all 0.3s ease
+		-o-transition all 0.3s ease
+		transition all 0.3s ease
+		top 0
+
+		&:hover
+			background-color ww
+			color dgy
+
+	.older-posts
+		right 0
+
+	.newer-posts
+		left 0
+
+/*	F.
+*	SHARE POST
+* ================================ */
+#post_footer_wspro
+	position relative
+	width 100%
+
+#share_post_wspro
+	margin 100px 0
+
+	h4
+		color txt
+		font-size 1.8em
+
+	a
+		color lgy
+		font-size 2em
+		margin 0 10px
+		text-decoration none
+		-webkit-transition all 0.3s ease
+		-moz-transition all 0.3s ease
+		-ms-transition all 0.3s ease
+		-o-transition all 0.3s ease
+		transition all 0.3s ease
+
+	.fa-twitter:hover
+		color #4099ff
+
+	.fa-facebook:hover
+		color #3b5998
+
+	.fa-google-plus:hover
+		color #d34836
+
+#author_wspro
+	color txt
+	font-family "Noto Sans", sans-serif
+	margin 100px 0
+	text-align left
+	width 100%
+
+	img
+		border 5px solid ww
+		border-radius 50%
+		-webkit-box-shadow 1px 1px 4px rgba(lgy, 0.7)
+		-moz-box-shadow 1px 1px 4px rgba(lgy, 0.7)
+		box-shadow 1px 1px 4px rgba(lgy, 0.7)
+		-webkit-box-sizing border-box
+		-moz-box-sizing border-box
+		box-sizing border-box
+		float left
+		height auto
+		margin-right 30px
+		width 160px
+
+	h4
+		font-size 1.2em
+		line-height 1.6em
+		margin 0
+		padding-top 8px
+
+	a
+		color lgy
+		font-size 0.8em
+		-webkit-transition all 0.3s ease
+		-moz-transition all 0.3s ease
+		-ms-transition all 0.3s ease
+		-o-transition all 0.3s ease
+		transition all 0.3s ease
+
+		&:hover
+			color dgy
+
+	p
+		font-size 0.9em
+		line-height 1.6em
+
+/*	G.
+*	COMMENTS
+* ================================ */
+
+/*	H.
+*	FOOTER
+* ================================ */
+
+#foot_wspro
+	background-color dgy
+	color ww
+	font-family "Noto Sans", sans-serif
+	margin-top 100px
+	padding 100px 0
+	text-align center
+	width 100%
+
+	a
+		color ww
+		-webkit-transition all 0.3s ease
+		-moz-transition all 0.3s ease
+		-ms-transition all 0.3s ease
+		-o-transition all 0.3s ease
+		transition all 0.3s ease
+
+		&:hover
+			color txt
+
+#sociallinks_wspro
+	font-size 1.8em
+	list-style none
+	margin 0
+	padding 0
+
+	li
+		display inline-block
+		margin 0 5px
+		vertical-align top
+
+	a
+		text-decoration none
+
+#copyright_wspro
+	font-size 0.7em
+	margin 0 40px
+	margin-top 100px
+
+
+/*	I.
+*	GH PLUGINS
+* ================================ */
+
+.gh-tooltip
+	display none
+
+.tooltip-def
+	cursor pointer
+	font-weight 700
+	position relative
+
+	p
+		background-color ww
+		border-radius 5px
+		bottom -10px
+		-webkit-box-shadow 1px 1px 5px rgba(dgy, 0.5)
+		-moz-box-shadow 1px 1px 5px rgba(dgy, 0.5)
+		box-shadow 1px 1px 5px rgba(dgy, 0.5)
+		display none
+		font-family "Noto Sans", sans-serif
+		font-size 0.7em
+		font-weight 400
+		line-height 1.4em
+		opacity 0.0
+		padding 8px
+		position absolute
+		width 160px
+		z-index 200
+
+.tooltip-def.activeleft
+
+	p
+		display block
+		left -10px
+
+.tooltip-def.activeright
+
+	p
+		display block
+		right -10px
+
+
+/*	J.
+*	MEDIA QUERIES
+* ================================ */
+
+@media screen and (min-width: 320px)
+
+	#wrapper_wspro
+		margin 0 auto
+
+	#blog_title
+		font-size 2.6em
+		line-height 1.6em
+
+	#menu_wspro ul li
+		display block
+
+	.post_content
+	.post_preview
+
+		img
+			width 100%
+
+	#content_wspro blockquote
+		margin 40px 0 40px 0
+		padding-left 20px
+
+	article.featured .post_header .fa-bookmark
+		font-size 0.8em
+		margin-right 5px
+
+
+@media screen and (min-width: 768px)
+
+	#wrapper_wspro
+		margin 70px auto
+
+	#blog_title
+		font-size 3.8em
+		line-height 150px
+
+	#menu_wspro ul li
+		display inline-block
+
+	#content_wspro blockquote
+		margin-left -25px
+		padding-left 20px
+
+	article.featured .post_header .fa-bookmark
+		height 30px
+		left -40px
+		line-height 30px
+		position absolute
+		text-align center
+		top 3px
+		width 30px
+
+@media screen and (min-width: 960px)
+
+	.post_content p:first-child
+	.post_preview p:first-child
+
+		img
+			margin-left -10%
+			width 120%
+
+	#content_wspro blockquote
+		margin-left -45px
+		padding-left 40px

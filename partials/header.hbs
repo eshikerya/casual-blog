@@ -1,0 +1,20 @@
+{{! Wordsmith Pro - BLOG HEADER PARTIAL }}
+
+<header id="head_wspro" class="bkg-cover" 
+{{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+
+    <div id="head_content_wspro" class="acc_bkg_tr">
+
+        {{#if @blog.logo}}
+        <a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}} Logo" /></a>
+        {{/if}}
+
+        <a href="{{@blog.url}}"><h1 id="blog_title">{{@blog.title}}</h1></a>
+
+        {{> menu}}
+
+        <p id="blog_description">{{@blog.description}}</p>
+
+    </div>
+
+</header>
