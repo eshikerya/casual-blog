@@ -416,8 +416,8 @@ nav.pagination .newer-posts {
   background-color: #1FB882;
   color: #fff;
   font-family: 'Lato', sans-serif;
-  margin-top: 100px;
-  padding: 100px 0;
+  margin-top: 50px;
+  padding: 50px 0;
   text-align: center;
   width: 100%;
 }
@@ -449,7 +449,7 @@ nav.pagination .newer-posts {
 #copyright_wspro {
   font-size: 0.7em;
   margin: 0 40px;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 /*	I.
 *	GH PLUGINS
