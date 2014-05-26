@@ -79,7 +79,7 @@ h6 {
 *	HEADER
 * ================================ */
 #head_wspro {
-  color: #fff;
+  color: #0000;
   position: relative;
   width: 100%;
 }
@@ -97,7 +97,7 @@ h6 {
   max-width: 150px;
 }
 #head_content_wspro a {
-  color: #fff;
+  color: #0000;
   text-decoration: none;
 }
 #blog_title {
